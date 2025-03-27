@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beloved Tishya ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-pink: #ff6b8b;
+            --soft-pink: #ffb6c1;
+            --dark-pink: #e75480;
+            --white: #fff;
+            --light-bg: #fff5f7;
+            --text-dark: #333;
+            --text-light: #666;
+            --gold: #ffd700;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.1) 0%, transparent 25%),
+                radial-gradient(circle at 80% 70%, rgba(255, 107, 139, 0.1) 0%, transparent 25%);
+        }
+
+        .love-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        /* Floating Hearts & Flowers */
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .float-element {
+            position: absolute;
+            animation: float 8s linear infinite;
+            opacity: 0;
+            font-size: 1.2rem;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) scale(0.5) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.8;
+            }
+
+            90% {
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(-10vh) scale(1.2) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Header Section */
+        .love-header {
+            text-align: center;
+            padding: 3rem 0;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInDown 1s both;
+        }
+
+        .love-header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem;
+            color: var(--dark-pink);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: inline-block;
+        }
+
+        .love-header h1::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-pink), transparent);
+        }
+
+        .love-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s both 0.3s;
+        }
+
+        /* Priority Message Animation */
+        .priority-message {
+            background: linear-gradient(45deg, var(--primary-pink), var(--dark-pink));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin: 2rem auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(231, 84, 128, 0.3);
+            animation: pulse 2s infinite alternate, slideIn 1s both 0.5s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .priority-message::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/always-grey.png');
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .priority-message p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+            position: relative;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .priority-message i {
+            margin: 0 10px;
+            animation: bounce 2s infinite;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+        }
+
+        /* Photo Frame */
+        .love-photo {
+            width: 250px;
+            height: 250px;
+            margin: 2rem auto;
+            border-radius: 50%;
+            border: 8px solid white;
+            box-shadow: 0 15px 40px rgba(231, 84, 128, 0.2);
+            overflow: hidden;
+            position: relative;
+            animation: fadeInUp 1s both 0.7s;
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+
+        .love-photo:hover {
+            transform: scale(1.05) rotate(5deg);
+            box-shadow: 0 20px 50px rgba(231, 84, 128, 0.4);
+        }
+
+        .love-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .love-photo:hover img {
+            transform: scale(1.1);
+        }
+
+        .love-photo::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent 60%, rgba(255, 255, 255, 0.3) 100%);
+            pointer-events: none;
+        }
+
+        .love-photo::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background: linear-gradient(45deg, var(--gold), var(--primary-pink), var(--gold));
+            z-index: -1;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Love Timer */
+        .love-timer {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin: 3rem auto;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s both 1s;
+        }
+
+        .love-timer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-pink), var(--gold), var(--primary-pink));
+        }
+
+        .love-timer h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--dark-pink);
+            margin-bottom: 1.5rem;
+        }
+
+        .timer-display {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .timer-unit {
+            background: linear-gradient(135deg, var(--soft-pink), var(--white));
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 100px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .timer-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark-pink);
+            line-height: 1;
+        }
+
+        .timer-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+
+        .timer-message {
+            font-style: italic;
+            color: var(--text-light);
+            margin-top: 1.5rem;
+        }
+
+        /* Love Letter */
+        .love-letter {
+            background-color: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin: 3rem 0;
+            position: relative;
+            animation: fadeIn 1s both 1.2s;
+            border: 1px solid rgba(231, 84, 128, 0.2);
+        }
+
+        .love-letter::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/notebook.png');
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+        .love-letter h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--dark-pink);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .love-letter p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .love-letter p::before {
+            content: "❤️";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 0.8rem;
+        }
+
+        .love-letter .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: var(--dark-pink);
+            text-align: right;
+            margin-top: 2rem;
+            position: relative;
+            display: inline-block;
+            padding-right: 2rem;
+        }
+
+        .love-letter .signature::after {
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-pink));
+        }
+
+        /* Memories Section */
+        .memories-section {
+            margin: 4rem 0;
+            animation: fadeIn 1s both 1.4s;
+        }
+
+        .memories-section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--dark-pink);
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .memories-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-pink), transparent);
+        }
+
+        .memories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .memory-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            border: 1px solid rgba(231, 84, 128, 0.1);
+        }
+
+        .memory-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(231, 84, 128, 0.2);
+        }
+
+        .memory-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .memory-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .memory-card .memory-info {
+            padding: 1.2rem;
+            position: relative;
+        }
+
+        .memory-card h3 {
+            font-size: 1.2rem;
+            color: var(--dark-pink);
+            margin-bottom: 0.5rem;
+        }
+
+        .memory-card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .memory-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 60%, rgba(231, 84, 128, 0.05) 100%);
+            pointer-events: none;
+        }
+
+        /* Reasons Section */
+        .reasons-section {
+            background: linear-gradient(135deg, rgba(255, 182, 193, 0.1), rgba(255, 107, 139, 0.1));
+            padding: 3rem;
+            border-radius: 16px;
+            margin: 3rem 0;
+            animation: fadeIn 1s both 1.6s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reasons-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/always-grey.png');
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .reasons-section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--dark-pink);
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .reasons-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-pink), transparent);
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .reason-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(231, 84, 128, 0.1);
+        }
+
+        .reason-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(231, 84, 128, 0.15);
+        }
+
+        .reason-card i {
+            font-size: 2rem;
+            color: var(--primary-pink);
+            margin-bottom: 1rem;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .reason-card:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: var(--dark-pink);
+        }
+
+        .reason-card h3 {
+            font-size: 1.3rem;
+            color: var(--dark-pink);
+            margin-bottom: 0.8rem;
+        }
+
+        .reason-card p {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .reason-card::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-pink), var(--gold));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .reason-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* Footer */
+        .love-footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(231, 84, 128, 0.2);
+            animation: fadeIn 1s both 1.8s;
+            position: relative;
+        }
+
+        .love-footer::before {
+            content: "❤️";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--light-bg);
+            padding: 0 20px;
+            font-size: 1.5em;
+        }
+
+        .love-footer p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, var(--primary-pink), var(--dark-pink));
+            color: white;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(231, 84, 128, 0.4);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.03);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .love-header h1 {
+                font-size: 3rem;
+            }
+
+            .priority-message p {
+                font-size: 1.2rem;
+            }
+
+            .memories-grid,
+            .reasons-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .love-letter,
+            .reasons-section {
+                padding: 1.5rem;
+            }
+
+            .timer-unit {
+                min-width: 80px;
+            }
+
+            .timer-value {
+                font-size: 2rem;
+            }
+
+            /* Special Animation for Laugh Card */
+            #laugh-card:hover {
+                animation: heartBeat 1s;
+                background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            }
+
+            /* Giggles Icon Animation */
+            .giggle-icon {
+                animation: bounce 2s infinite alternate;
+            }
+
+            /* Memory Cards */
+            .memory-popup:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 30px rgba(255, 105, 180, 0.3);
+            }
+
+            /* Pulse Animation */
+            .pulse-icon {
+                animation: pulse 1.5s infinite;
+            }
+
+            @keyframes heartBeat {
+                0% {
+                    transform: scale(1);
+                }
+
+                25% {
+                    transform: scale(1.1);
+                }
+
+                40% {
+                    transform: scale(1);
+                }
+
+                60% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Floating Hearts & Flowers Background -->
+    <div class="floating-elements" id="floatingElements"></div>
+
+    <div class="love-container">
+        <!-- Header Section -->
+        <header class="love-header">
+            <h1>My Dearest Tishya</h1>
+            <p>Every moment with you is a precious gift I cherish deeply</p>
+        </header>
+
+        <!-- Priority Message -->
+        <div class="priority-message">
+            <p><i class="fas fa-heart"></i> You are more important than anything else in my world <i
+                    class="fas fa-heart"></i></p>
+        </div>
+
+        <!-- Photo -->
+        <div class="love-photo">
+            <img src="WhatsApp Image 2025-03-27 at 23.52.38.jpeg" alt="Me and Tishya">
+        </div>
+
+        <!-- Love Timer -->
+        <div class="love-timer">
+            <h2>Our Love Journey</h2>
+            <p>From August 22nd until now...</p>
+            <div class="timer-display">
+                <div class="timer-unit">
+                    <div class="timer-value" id="days">0</div>
+                    <div class="timer-label">Days</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value" id="hours">0</div>
+                    <div class="timer-label">Hours</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value" id="minutes">0</div>
+                    <div class="timer-label">Minutes</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value" id="seconds">0</div>
+                    <div class="timer-label">Seconds</div>
+                </div>
+            </div>
+            <p class="timer-message">And counting every moment of our beautiful love!</p>
+        </div>
+
+        <!-- Love Letter -->
+        <section class="love-letter">
+            <h2>My Heart's Message</h2>
+            <p>SOO MAKING THIS WEBSITE WAS JUST AN EXCUSE...
+                An excuse to thank you for being with me
+                An excuse to express my love for you andddd A WARNING :D THAT U WILL NEVER LEAVE ME...</p>
+            <p>Tishya yaar i m so in love with you like seriously , your smile , your face , your dimples everything has
+                something behind them which makes me love you more and more by each passing day... IK IK we fight a lot
+                in the past 2- 3 days and thats why i m making this to say SORRY i m seriously very sorry jaaneman and i
+                will neever ever fight with youuuu thats my promise baby. ok so i love you yar i wanna marry you one day
+                idcc where we areee i js wanna marry youuu..
+                IK YOU ARE THE ONE WHO CAN HANDLE MEE , you literally know everrything about meee... you know me so so
+                so welllllllll my cutuuuuu. WE WILL NEVER EVER BREAK UP OKAY? IF YOU ARE BORED YOU GO TAKE A NAP BUT
+                BREAKING UP IS NOT AN OPTION BABYYY...</p>
+            <p>Basically itsss compulsoryy for you to marry me and get stuck with meeee... I JUST WANT YOU IN MY WHOLEEE
+                LIFEE AND I JUST WANNA HEAR YOUR STUPIDD THINGS FOREVERR....</p>
+            <div class="signature">Forever yours,<br>AAPKA JAANEMAN :D</div>
+        </section>
+
+        <!-- Memories Section -->
+        <section class="memories-section">
+            <h2>Our Precious Memories</h2>
+            <div class="memories-grid">
+                <!-- Memory 1 -->
+                <div class="memory-card">
+                    <img src="daate.jpeg" alt="Our first date">
+                    <div class="memory-info">
+                        <h3>Our First Date</h3>
+                        <p> THIS HAS TO BE HISTORIC NAAAA COZ OF THE " FILMY END"</p>
+                    </div>
+                </div>
+
+                <!-- Memory 2 -->
+                <div class="memory-card">
+                    <img src="trip.jpeg" alt="Special moment">
+                    <div class="memory-info">
+                        <h3>That Magical Trip</h3>
+                        <p> ALL THESE TRIPS THEY GET SOO SWEETER WITH YOUU YAAR</p>
+                    </div>
+                </div>
+
+                <!-- Memory 3 -->
+                <div class="memory-card">
+                    <img src="cuteee.jpeg" alt="Cute moment">
+                    <div class="memory-info">
+                        <h3>I LIKED THISSSS</h3>
+                        <p>I LIKEE RESTINGG ON YOU JAANU</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons Section -->
+        <!-- Reasons Section -->
+        <section class="reasons-section">
+            <h2>Reasons I'm Crazy About You</h2>
+            <div class="reasons-grid">
+                <!-- Physical Features -->
+                <div class="reason-card" id="laugh-card">
+                    <i class="fas fa-heartbeat pulse-icon"></i>
+                    <h3>😊 That Beautiful Laugh</h3>
+                    <p>Your laugh sends little heart explosions through my chest LITERALLYYYYY</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-smile-wink"></i>
+                    <h3>😍 Those Cute Dimples</h3>
+                    <p>Those dimples literally haveee my heartt holyy fucccckkkkkk</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>🦵 THE Perfect Thighs</h3>
+                    <p>HEHEHEEHEH NO EXPLANATION NEEEDEDDDD</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>👀 THE FUCKING GORGEOUS Eyes</h3>
+                    <p>I COULD STARE INTO THEM AND FIND ALLL THE CONSTELLATIONS ( YKWIM)</p>
+                </div>
+
+                <!-- Adorable Behaviors -->
+                <div class="reason-card">
+                    <i class="fas fa-grin-tears giggle-icon"></i>
+                    <h3>🤭Giggles</h3>
+                    <p>THE GIGGLESS IN THOSE SNAPSS AHHHH</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-camera-retro"></i>
+                    <h3>📸 Random Snaps</h3>
+                    <p>it was a necessarryryr REASONNN</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>👗 Random Fit Checks</h3>
+                    <p>THESE FIT CHECKS , THEY HAVE MY HEARTTT</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-comment-medical"></i>
+                    <h3>💬 YOUR Bla Bla Bla</h3>
+                    <p>OMGMGG THIS IS LITERALLY THE BEST ONE AND UR VOICE OHOHOHO</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-microphone-alt"></i>
+                    <h3>🎙️ Your VMs</h3>
+                    <p>THEY ARE MYYY FAVV JAAAAANU</p>
+                </div>
+
+                <!-- Intimate Moments -->
+                <div class="reason-card">
+                    <i class="fas fa-moon"></i>
+                    <h3>🌙 YOURR MORNINGNNN VMSSS</h3>
+                    <p>Thoseeee"good morning" voice messagessssss melts me instantly</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-hands-holding-heart"></i>
+                    <h3>🤝 How We Hold Hands</h3>
+                    <p> I LOVE IT YAAAAR </p>
+                </div>
+
+                <!-- Interactive Memories -->
+                <div class="reason-card">
+                    <i class="fas fa-people-arrows"></i>
+                    <h3>Hanging Out Together</h3>
+                    <p> THIS IS SO REAAAAL NAAA</p>
+                </div>
+
+                <div class="reason-card memory-popup">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Our First Call</h3>
+                    <p> I justt thoughhhtt to addd itt jaanu </p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Late Night Calls</h3>
+                    <p>When we say "5 more minutes" for 3 hours</p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>THE Dumb Things</h3>
+                    <p>WHEN YOU JUST GET HIGH ON SOMETIHNGGNGNGN AND DO ANYTHING OIFWREOIGJ SOOO CUTEEE</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="love-footer">
+            <p>Made with endless love for the most wonderful person in my life , I LOVE YOU SO MUCH TISHYA.. dont ever
+                leave meeeee</p>
+            <p>Tishya, you are my today and all of my tomorrows</p>
+
+        </footer>
+    </div>
+
+    <script>
+        // Create floating elements (hearts and flowers)
+        function createFloatingElements() {
+            const container = document.getElementById('floatingElements');
+            const element = document.createElement('div');
+            element.className = 'float-element';
+
+            // Alternate between hearts and flowers
+            if (Math.random() > 0.5) {
+                element.innerHTML = '<i class="fas fa-heart"></i>';
+                element.style.color = `hsl(${Math.random() * 30 + 330}, 100%, 70%)`;
+            } else {
+                element.innerHTML = '<i class="fas fa-spa"></i>';
+                element.style.color = `hsl(${Math.random() * 60 + 100}, 100%, 70%)`;
+            }
+
+            element.style.left = Math.random() * 100 + 'vw';
+            element.style.animationDuration = (Math.random() * 7 + 5) + 's';
+            element.style.fontSize = (Math.random() * 15 + 10) + 'px';
+            element.style.animationDelay = Math.random() * 5 + 's';
+            container.appendChild(element);
+
+            setTimeout(() => {
+                element.remove();
+            }, 12000);
+        }
+
+        setInterval(createFloatingElements, 500);
+
+        // Love Timer - From August 22nd
+        function updateLoveTimer() {
+            const startDate = new Date('2023-08-22T00:00:00'); // August 22nd 2023
+            const now = new Date();
+            const diff = now - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        updateLoveTimer();
+        setInterval(updateLoveTimer, 1000);
+
+        // Animate priority message on scroll
+        const priorityMessage = document.querySelector('.priority-message');
+
+        window.addEventListener('scroll', () => {
+            const messagePosition = priorityMessage.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (messagePosition < screenPosition) {
+                priorityMessage.style.animation = 'pulse 2s infinite alternate, bounce 2s infinite';
+            }
+        });
+
+        // Rotating messages for priority banner
+        const messages = [
+            "You are my sunshine on cloudy days",
+            "My heart skips a beat when you smile",
+            "I cherish every moment with you",
+            "Your love is my greatest treasure",
+            "I fall for you more each day",
+            "You make my world brighter"
+        ];
+
+        let currentMessage = 0;
+        const priorityText = document.querySelector('.priority-message p');
+
+        function changeMessage() {
+            priorityText.innerHTML = `<i class="fas fa-heart"></i> ${messages[currentMessage]} <i class="fas fa-heart"></i>`;
+            currentMessage = (currentMessage + 1) % messages.length;
+        }
+
+        setInterval(changeMessage, 5000);
+
+        // Add sparkle effect to photo on hover
+        const lovePhoto = document.querySelector('.love-photo');
+
+        lovePhoto.addEventListener('mouseover', () => {
+            const sparkles = ['✨', '🌟', '💫', '⭐'];
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const sparkle = document.createElement('div');
+                    sparkle.className = 'float-element';
+                    sparkle.innerHTML = sparkles[Math.floor(Math.random() * sparkles.length)];
+                    sparkle.style.position = 'absolute';
+                    sparkle.style.left = Math.random() * 80 + 10 + '%';
+                    sparkle.style.top = Math.random() * 80 + 10 + '%';
+                    sparkle.style.fontSize = (Math.random() * 10 + 10) + 'px';
+                    sparkle.style.animation = 'float 2s ease-out forwards';
+                    sparkle.style.opacity = '0.8';
+                    lovePhoto.appendChild(sparkle);
+
+                    setTimeout(() => {
+                        sparkle.remove();
+                    }, 2000);
+                }, i * 300);
+            }
+        });
+    </script>
+</body>
+
+</html>
